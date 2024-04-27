@@ -92,3 +92,12 @@
 
 
 /*WEEK DAYS NAVIGATION END*/
+
+
+@media (min-width: 1200px){
+    .days-navigation {
+        display: none;
+    }
+}
+
+/*TODO: Make it responsive for larger screens*/
