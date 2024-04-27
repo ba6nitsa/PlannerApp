@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+</head>
+<input type="checkbox" id="toggle">
+
+<body>
+    <div class="site">
+        <header class="site-header">
+
+            <div class="container">
+                <nav class="main-nav">
+
+                    <span class="logo"><a href="/">PLANYOURWEEK<span><i
+                                    class="fa-regular fa-calendar"></i></span></a></span>
+
+                    <div class="profile">
+
+                        <label for="toggle">
+                            <img src="/images/profile-icon.png" alt="img">
+                        </label>
+                    </div>
+
+                    <div class="dropdown">
+
+                        <ul class="settings">
+                            <li>
+                                <p><a href="#">Profile</a></p>
+                            </li>
+                            <li>
+                                <p><a href="#">Logout</a></p>
+                            </li>
+
+                            <li>
+                                <div class="theme">
+                                    <i class="fa-solid fa-sun fa-xl"></i>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </nav>
+
+                <nav class="days-navigation">
+                    <ul>
+                        <li class="monday"><a href="#monday">Mon</a></li>
+                        <li class="tuesday"><a href="#tuesday">Tue</a></li>
+                        <li class="wednesday"><a href="#wednesday">Wed</a></li>
+                        <li class="thursday"><a href="#thursday">Thu</a></li>
+                        <li class="friday"><a href="#friday">Fri</a></li>
+                        <li class="saturday"><a href="#saturday">Sat</a></li>
+                        <li class="sunday"><a href="#sunday">Sun</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </header>
+
+        <main>
+            <div class="container">
+
+                <div class="site-main">
+                    <input class="week-selector" type="week" />
+
+                    <div class="week">
+                        <div id="monday" class="day-of-week-card">
+                            <p class="day">Monday</p>
+                            <hr class="line">
+                            <div class="content"></div>
+                            <div class="buttons">
+                                <button>View ALL</button>
+                            </div>
+                        </div>
+                        <div id="tuesday" class="day-of-week-card">
+                            <p class="day">Tuesday</p>
+                            <hr class="line">
+                            <div class="content"></div>
+                            <div class="buttons">
+                                <button>View ALL</button>
+                            </div>
+
+                        </div>
+                        <div id="wednesday" class="day-of-week-card">
+                            <p class="day">Wednesday</p>
+                            <hr class="line">
+                            <div class="content"></div>
+                            <div class="buttons">
+                                <button>View ALL</button>
+                            </div>
+
+                        </div>
+                        <div id="thursday" class="day-of-week-card">
+                            <p class="day">Thursday</p>
+                            <hr class="line">
+                            <div class="content"></div>
+                            <div class="buttons">
+                                <button>View ALL</button>
+                            </div>
+
+                        </div>
+                        <div id="friday" class="day-of-week-card">
+                            <p class="day">Friday</p>
+                            <hr class="line">
+                            <div class="content"></div>
+                            <div class="buttons">
+                                <button>View ALL</button>
+                            </div>
+
+                        </div>
+                        <div id="saturday" class="day-of-week-card">
+                            <p class="day">Saturday</p>
+                            <hr class="line">
+                            <div class="content"></div>
+                            <div class="buttons">
+                                <button>View ALL</button>
+                            </div>
+
+                        </div>
+                        <div id="sunday" class="day-of-week-card">
+                            <p class="day">Sunday</p>
+                            <hr class="line">
+                            <div class="content"></div>
+                            <div class="buttons">
+                                <button>View ALL</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <footer></footer>
+    </div>
+</body>
+
+<script type="module" th:src="@{/js/script.js}"></script>
+
+</html>

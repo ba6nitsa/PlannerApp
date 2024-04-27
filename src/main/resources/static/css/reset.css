@@ -1,0 +1,42 @@
+/* Reset.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Additional reset styles */
+html {
+    font-size: 12px;
+    /* Set a base font size for better scalability */
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: var(--light-clr);
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    /* Ensure images don't exceed their container */
+    height: auto;
+    /* Prevent image distortion */
+    display: block;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    /* Ensure form elements inherit font styles */
+}
+
+/* Remove lists styling */
+ul,
+ol {
+    list-style: none;
+}

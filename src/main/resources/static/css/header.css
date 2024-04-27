@@ -1,0 +1,94 @@
+/*MAIN NAVIGATION START*/
+
+.site-header {
+    background-color: var(--main-clr);
+}
+
+.site-header .main-nav {
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#toggle {
+    display: none;
+}
+
+.profile {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 0.3em;
+}
+
+.profile label {
+    display: block;
+    width: var(--size-l);
+    text-align: center;
+}
+
+
+.main-nav .dropdown {
+    display: none;
+}
+
+.theme {
+    padding: 0.4em;
+    border-radius: 35%;
+    background-color: var(--darker-rose-clr);
+}
+
+#toggle:checked+.site .site-header .container .main-nav .profile {
+    right: 2em;
+    top: 2em;
+    position: fixed;
+    z-index: 10000;
+}
+
+#toggle:checked+.site .site-header .container .main-nav .dropdown {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--main-clr);
+    height: 100vh;
+}
+
+#toggle:checked+.site .site-header .container .main-nav .dropdown .settings {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-s);
+    font-size: var(--size-l);
+}
+
+/*MAIN NAVIGATION END*/
+
+/*--------------------------------------------------------------------*/
+
+/*WEEK DAYS NAVIGATION START*/
+
+.days-navigation {
+    background-color: var(--darker-rose-clr);
+    padding: 0.5em 1em;
+}
+
+.days-navigation ul {
+    font-size: var(--size-m);
+    display: flex;
+    justify-content: space-between;
+}
+
+.sticky {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+/*WEEK DAYS NAVIGATION END*/

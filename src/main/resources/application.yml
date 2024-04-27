@@ -1,0 +1,27 @@
+spring:
+    application:
+        name: Planner App
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://${MYSQL_HOST}/PlannerApp?allowPublicKeyRetrieval=true&useSSL=false&createDatabaseIfNotExist=true&serverTimezone=UTC
+        username: ${MYSQL_USERNAME}
+        password: ${MYSQL_PASSWORD}
+    jpa:
+        database-platform:
+        defer-datasource-initialization: true
+        properties:
+            hibernate:
+                format_sql: true
+        hibernate:
+            ddl-auto: update
+    sql:
+        init:
+            mode: never
+    thymeleaf: #Thymeleaf
+        cache: false
+        encoding: UTF-8
+        prefix: file:src/main/resources/templates/
+    mvc:
+        hiddenmethod:
+            filter:
+                enabled: true

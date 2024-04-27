@@ -1,0 +1,60 @@
+.site-main {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3em;
+}
+
+.week {
+    margin: 2em;
+    color: var(--main-clr);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+.week-selector {
+    margin-top: 3em;
+    color: var(--main-clr);
+    border: 1px solid var(--main-clr);
+    align-self: center;
+    background-color: transparent;
+}
+
+.week-selector:focus {
+    outline: none;
+}
+
+.day-of-week-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 35vh;
+    border: 1px solid var(--main-clr);
+    text-align: center;
+}
+
+
+.day-of-week-card .day {
+    margin-top: 3em;
+}
+
+.day-of-week-card .buttons {
+    margin-top: auto;
+    margin-bottom: 1em;
+}
+
+.day-of-week-card .buttons button{
+    border: 1px solid var(--main-clr);
+    color: #fff;
+    background-color: var(--darker-rose-clr);
+    padding: 0.4em 0.8em;
+    border-radius: 8px;
+}
+
+
+.day-of-week-card .line {
+    border: 1px solid var(--main-clr);
+    width: 8em;
+    align-self: center;
+}

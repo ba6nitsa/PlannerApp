@@ -1,0 +1,19 @@
+:root {
+
+    /* Colors */
+    
+    --main-clr: #E95959;
+    --darker-rose-clr: #E42B2B;
+    --text-clr: #E95959;
+    --light-clr: #fff;
+    --dark-clr: #000;
+
+    /* Text Sizes */
+
+    --size-xs: 0.8em;
+    --size-s: 1em;
+    --size-m: 1.2em;
+    --size-l: 1.5em;
+    --size-xl: 2em;
+
+}

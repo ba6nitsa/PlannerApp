@@ -1,0 +1,16 @@
+body {
+    background-color: var(--light-clr);
+    min-height: 100vh;
+}
+
+.dark-theme {
+    --main-clr: #6E1F1F;
+    --darker-rose-clr: #421717;
+    --light-clr: #1A1A1A;
+    --text-clr: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
